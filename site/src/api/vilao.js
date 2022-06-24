@@ -8,3 +8,9 @@ export async function cadastrarFilme(nome, maldade, ds_temPoder){
     })
     return resposta.data;
 }
+
+export async function mostrarViloes (){ 
+    const resposta = await api.get('/consulta'); 
+    return resposta.data; 
+
+}
